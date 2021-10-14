@@ -5,10 +5,17 @@
         <title>New Tab</title>
     </head>
     <body>
-
         <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-            <input autocomplete="on" class="form-control search" name="q" placeholder="Search in example.com" required="required"  type="text">
-            <button class="button" type="submit">Search</button>
+            <div class="logo">
+                <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
+            <div class="bar">
+                <input autocomplete="on" name="q" required="required" class="searchbar" type="text" title="Search">
+                <a href="#"> <img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+            </div>
+            <div class="buttons">
+                <button class="button" type="button">Google Search</button>
+            </div>
         </form>
         
         <div class="cuadrados">
