@@ -1,64 +1,69 @@
-<html><head>
-    <link rel="stylesheet" type="text/css" href="https://henyckmazocker.github.io/styles.css">
-    
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://henyckmazocker.github.io/styles.css">
+        
         <title>New Tab</title>
     </head>
     <body>
-    
-    <div class="cuadrados">
-        <div class="youtube">
-            <a href="http://www.youtube.com" style="display:block;height:100%;width:100%"></a>
+
+        <form action="gsearch.php" method="post">
+            <input type="text">
+        </form>
+        
+        <div class="cuadrados">
+            <div class="youtube">
+                <a href="http://www.youtube.com" style="display:block;height:100%;width:100%"></a>
+            </div>
+        
+            <div class="twitter">
+                <a href="http://www.twitter.com" style="display:block;height:100%;width:100%"></a>
+            </div>
+        
+            <div class="twitch">
+                <a href="http://www.twitch.tv" style="display:block;height:100%;width:100%"></a>
+            </div>
+        
+            <div class="reddit">
+                <a href="http://www.reddit.com" style="display:block;height:100%;width:100%"></a>
+            </div>
+        
+            <div class="gmail">
+                <a href="http://www.gmail.com" style="display:block;height:100%;width:100%"></a>
+            </div>
+        
+            <div class="whatsapp">
+                <a href="https://web.whatsapp.com" style="display:block;height:100%;width:100%"></a>
+            </div>
+        
+            <div class="amazon">
+                <a href="https://www.amazon.com/" style="display:block;height:100%;width:100%"></a>
+            </div>
+        
+            <div class="netflix">
+                <a href="https://www.netflix.com/" style="display:block;height:100%;width:100%"></a>
+            </div>
         </div>
-    
-        <div class="twitter">
-            <a href="http://www.twitter.com" style="display:block;height:100%;width:100%"></a>
-        </div>
-    
-        <div class="twitch">
-            <a href="http://www.twitch.tv" style="display:block;height:100%;width:100%"></a>
-        </div>
-    
-        <div class="reddit">
-            <a href="http://www.reddit.com" style="display:block;height:100%;width:100%"></a>
-        </div>
-    
-        <div class="gmail">
-            <a href="http://www.gmail.com" style="display:block;height:100%;width:100%"></a>
-        </div>
-    
-        <div class="whatsapp">
-            <a href="https://web.whatsapp.com" style="display:block;height:100%;width:100%"></a>
-        </div>
-    
-        <div class="amazon">
-            <a href="https://www.amazon.com/" style="display:block;height:100%;width:100%"></a>
-        </div>
-    
-        <div class="netflix">
-            <a href="https://www.netflix.com/" style="display:block;height:100%;width:100%"></a>
-        </div>
-    </div>
-    
-    <a href="https://twitter.com/Nipz58" class="nipz58">@nipz58</a>
-    
-    <a href="https://nipz58.github.io/newtab-orslok/changelog.html" target="_blank" class="changelog">changelog</a>
-    
-    
-    
-    <script>mendeleyWebImporter = {
-      downloadPdfs(t,e) { return this._call('downloadPdfs', [t,e]); },
-      open() { return this._call('open', []); },
-      setLoginToken(t) { return this._call('setLoginToken', [t]); },
-      _call(methodName, methodArgs) {
-        const id = Math.random();
-        window.postMessage({ id, token: '0.5297430444233506', methodName, methodArgs }, 'https://nipz58.github.io');
-        return new Promise(resolve => {
-          const listener = window.addEventListener('message', event => {
-            const data = event.data;
-            if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
-            window.removeEventListener('message', listener);
-            resolve(data.result);
-          });
-        });
-      }
-    };</script></body></html>
+        
+        <a href="https://twitter.com/henyckmazoker" class="nipz58">@henyckmazoker</a>
+            
+        <script>
+            mendeleyWebImporter = {
+                downloadPdfs(t,e) { return this._call('downloadPdfs', [t,e]); },
+                open() { return this._call('open', []); },
+                setLoginToken(t) { return this._call('setLoginToken', [t]); },
+                _call(methodName, methodArgs) {
+                    const id = Math.random();
+                    window.postMessage({ id, token: '0.5297430444233506', methodName, methodArgs }, 'https://henyckmazocker.github.io');
+                    return new Promise(resolve => {
+                        const listener = window.addEventListener('message', event => {
+                            const data = event.data;
+                            if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+                            window.removeEventListener('message', listener);
+                            resolve(data.result);
+                        });
+                    });
+                }
+            };
+        </script>
+    </body>
+</html>
