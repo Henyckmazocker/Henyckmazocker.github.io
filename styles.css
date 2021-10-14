@@ -96,15 +96,13 @@ body {
 	list-style: square;
 }
 
-.logo{
-    margin-top:200px;
-    margin-bottom:20px;
-}
+
 .bar{
     margin:0 auto;
     width:575px;
     border-radius:30px;
     border:1px solid #dcdcdc;
+    background-color: #0f0f0f;
 }
 .bar:hover{
     box-shadow: 1px 1px 8px 1px #dcdcdc;  
