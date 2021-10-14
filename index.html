@@ -7,7 +7,7 @@
     <body>
         <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
             <div class="bar">
-                <input autocomplete="on" name="q" required="required" class="searchbar" type="text" title="Search">
+                <input autocomplete="on" name="q" required="required" class="searchbar" type="text" title="Search" autofocus>
             </div>
             <div class="buttons">
                 <button class="button" type="button">Google Search</button>
@@ -68,6 +68,14 @@
                     });
                 }
             };
+            function keyPress(e){
+                var x = e || window.event;
+                var key = (x.keyCode || x.which);
+                if(key == 13 || key == 3){
+                    //  myFunc1();
+                    document.searchform.submit();
+                }
+            }
         </script>
     </body>
 </html>
