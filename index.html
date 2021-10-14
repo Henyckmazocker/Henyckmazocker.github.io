@@ -48,23 +48,6 @@
         <a href="https://twitter.com/henyckmazoker" class="nipz58">@henyckmazoker</a>
             
         <script>
-            mendeleyWebImporter = {
-                downloadPdfs(t,e) { return this._call('downloadPdfs', [t,e]); },
-                open() { return this._call('open', []); },
-                setLoginToken(t) { return this._call('setLoginToken', [t]); },
-                _call(methodName, methodArgs) {
-                    const id = Math.random();
-                    window.postMessage({ id, token: '0.5297430444233506', methodName, methodArgs }, 'https://henyckmazocker.github.io');
-                    return new Promise(resolve => {
-                        const listener = window.addEventListener('message', event => {
-                            const data = event.data;
-                            if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
-                            window.removeEventListener('message', listener);
-                            resolve(data.result);
-                        });
-                    });
-                }
-            };
             function keyPress(e){
                 var x = e || window.event;
                 var key = (x.keyCode || x.which);
