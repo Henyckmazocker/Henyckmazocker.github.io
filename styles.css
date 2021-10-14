@@ -110,7 +110,7 @@ body {
     box-shadow: 1px 1px 8px 1px #dcdcdc;
     outline:none;
 }
-.searchbar{
+.searchbar:focus {
     height:45px;
     border:none;
     width:575px;
